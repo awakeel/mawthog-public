@@ -1,0 +1,21 @@
+{
+  "app":{
+    "name":"Mawthog App",
+    "profile":{
+      "name":"Abdul Wakeel"
+    }
+  },
+
+  "menu":[
+    {
+      "title":"Home",
+      "icon":"home",
+      "url":"home"
+    },
+    {
+      "title":"Car",
+      "icon":"home",
+      "url":"home"
+    }
+  ]
+}

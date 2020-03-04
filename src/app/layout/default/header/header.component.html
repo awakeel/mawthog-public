@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+  <span>{{app.name}}</span>
+  <span class="example-spacer"></span>
+
+    <button  *ngFor="let a of menu" mat-flat-button color="primary">{{a.title}}</button>
+
+  <button mat-button [matMenuTriggerFor]="a">{{app.profile.name}}</button>
+  <mat-menu #a="matMenu">
+    <button mat-menu-item>Setting</button>
+    <button mat-menu-item>Logout</button>
+  </mat-menu>
+</mat-toolbar>
