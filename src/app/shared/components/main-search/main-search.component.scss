@@ -1,0 +1,44 @@
+.main-search-form {
+  background-color: #f2f2f2;
+  padding: 5rem 3rem 1rem 3rem;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.main-search-form .form-group label {
+  font-size: 1.8rem;
+  top: -3.7rem;
+}
+.main-search-form .geo-location.input-group-addon {
+  height: 3.9rem;
+}
+.main-search-form:before {
+  border-style: solid;
+  border-width: 0 0.45rem 0.6rem 0.45rem;
+  border-color: transparent transparent #f2f2f2 transparent;
+  position: absolute;
+  top: -0.6rem;
+  right: 1.5rem;
+  content: "";
+}
+input,
+textarea,
+select,
+button {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1rem 0px inset;
+  color: rgb(54, 54, 54);
+  transform-style: preserve-3d;
+  -webkit-appearance: none;
+  background-color: rgb(255, 255, 255);
+  font-size: 1.4rem;
+  width: 100%;
+  height: inherit;
+  border-width: 0.1rem;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-image: initial;
+  border-radius: 0.3rem;
+  transition: all 0.3s ease 0s;
+  padding: 1.6rem;
+  outline: none !important;
+}

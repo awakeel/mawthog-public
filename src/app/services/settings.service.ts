@@ -1,17 +1,16 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
+import { Injectable } from "@angular/core";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class SettingsService {
   app;
-  constructor(private http: HttpClient) { }
-  setApp(app){
+  constructor(private http: HttpClient) {}
+  setApp(app) {
     this.app = app;
   }
-  getApp(){
+  getApp() {
     return this.app;
   }
-
 }

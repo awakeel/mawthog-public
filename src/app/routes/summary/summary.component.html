@@ -1,0 +1,31 @@
+<div class="p-col-12" dir="rtl">
+  <div class="p-grid">
+    <div
+      class="p-col"
+      style="
+        width: 100%;
+        height: 50px;
+        padding: 0px;
+        color: white;
+        background-image: linear-gradient(black, black);
+      "
+    >
+      <h4>This car is amazing, please go ahead</h4>
+    </div>
+  </div>
+  <div class="p-grid" style="padding: 15px;">
+    <div class="p-col-12 p-md-9 p-lg-9">
+      <p-galleria [images]="images" [showCaption]="false"></p-galleria>
+    </div>
+    <div class="p-col-12 p-md-3 p-lg-3" style="flex-direction: column-reverse;">
+      <div class="info-card">
+        <h1>{{ car.brand.brand }} {{ car.model }} {{ car.sub }}</h1>
+        <div style="opacity: 0.6;">
+          <h3>Location: {{ car.city }}</h3>
+          <h3>Color: {{ car.color }}</h3>
+        </div>
+      </div>
+      <app-card-tags [car]="car"></app-card-tags>
+    </div>
+  </div>
+</div>

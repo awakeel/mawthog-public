@@ -1,2 +1,53 @@
-<p>home works!</p>
-aaa
+<app-bigscreen></app-bigscreen>
+<!--<app-trending [cars]="cars$ | async" title="Trending Now"></app-trending>-->
+<!--<app-main-search></app-main-search>-->
+<p-dataView
+  #dv
+  [value]="cars$ | async"
+  [paginator]="true"
+  [rows]="20"
+  paginatorPosition="bottom"
+  filterBy="brand"
+  [sortField]="sortField"
+  [sortOrder]="sortOrder"
+  layout="grid"
+>
+  <p-header>
+    <app-search-bar></app-search-bar>
+    <!-- <div class="ui-helper-clearfix">
+      <div class="ui-g">
+        <div class="ui-g-12 ui-md-4">
+          <p-dropdown
+            [options]="sortOptions"
+            [(ngModel)]="sortKey"
+            placeholder="Sort By"
+            (onChange)="onSortChange($event)"
+            [style]="{ 'min-width': '140px' }"
+          ></p-dropdown>
+        </div>
+        <div class="ui-g-6 ui-md-4 filter-container">
+          <div style="position: relative;">
+            <input
+              type="search"
+              pInputText
+              placeholder="Search by brand"
+              (input)="dv.filter($event.target.value)"
+            />
+          </div>
+        </div>
+        <div class="ui-g-6 ui-md-4" style="text-align: right;">
+          <p-dataViewLayoutOptions></p-dataViewLayoutOptions>
+        </div>
+      </div>
+    </div>-->
+  </p-header>
+  <ng-template let-car pTemplate="gridItem">
+    <div style="margin: 0 auto;">
+      <app-card [car]="car" width="330px"></app-card>
+    </div>
+  </ng-template>
+  <ng-template let-car pTemplate="listItem">
+    <app-card [car]="car" width="100%"></app-card>
+  </ng-template>
+</p-dataView>
+<app-pricing></app-pricing>

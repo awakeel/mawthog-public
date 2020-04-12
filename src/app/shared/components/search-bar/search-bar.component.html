@@ -1,0 +1,71 @@
+<div class="card summary" style="margin-top: 0px; margin: 0px;">
+  <div class="p-grid p-align-center">
+    <div class="p-col">
+      <p-dropdown
+        [options]="brands | async"
+        filter="true"
+        placeholder="Select a Brand"
+      >
+        <ng-template let-item pTemplate="selectedItem">
+          <img
+            src="assets/showcase/images/demo/car/{{ item.cls }}.png"
+            style="width: 16px; vertical-align: middle;"
+          />
+          <span style="vertical-align: middle; margin-left: 0.5em;">{{
+            item.brand
+          }}</span>
+        </ng-template>
+        <ng-template let-car pTemplate="item">
+          <div
+            class="ui-helper-clearfix"
+            style="position: relative; height: 25px;"
+          >
+            <img
+              src="assets/showcase/images/demo/car/{{ car.cls }}.png"
+              style="width: 24px; position: absolute; top: 1px; left: 5px;"
+            />
+            <div style="font-size: 14px; float: right; margin-top: 4px;">
+              {{ car.brand }}
+            </div>
+          </div>
+        </ng-template>
+      </p-dropdown>
+    </div>
+    <div class="p-col">
+      <p-dropdown [options]="year" placeholder="Select a Year"></p-dropdown>
+    </div>
+    <div class="p-col">
+      <p-dropdown
+        [options]="sub | async"
+        placeholder="Select a Sub Brand"
+      ></p-dropdown>
+    </div>
+    <div class="p-col">
+      <p-dropdown [options]="colors" placeholder="Select a Color"></p-dropdown>
+    </div>
+    <div class="p-col">
+      <p-dropdown
+        [options]="cities"
+        placeholder="Select a City"
+        optionLabel="name"
+        [showClear]="true"
+      ></p-dropdown>
+    </div>
+    <div class="p-col">
+      <div class="ui-helper-clearfix">
+        <div class="ui-g">
+          <div class="ui-g-12 ui-md-4">
+            <p-dropdown
+              [options]="sortOptions"
+              [(ngModel)]="sortKey"
+              placeholder="Sort By"
+              (onChange)="onSortChange($event)"
+              [style]="{ 'min-width': '140px' }"
+            ></p-dropdown>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p-col"><p-dataViewLayoutOptions></p-dataViewLayoutOptions></div>
+  </div>
+</div>

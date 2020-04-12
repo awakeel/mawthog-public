@@ -1,0 +1,65 @@
+<div class="main-search-form">
+  <div class="form-row">
+    <div class="col-md-6 col-sm-3">
+      <div class="form-group">
+        <label for="what" class="col-form-label">What?</label>
+        <input
+          name="search"
+          type="text"
+          class="form-control"
+          id="what"
+          placeholder="What are you looking for?"
+        />
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-3">
+      <div class="form-group">
+        <label for="input-location" class="col-form-label">Where?</label
+        ><input
+          name="location"
+          type="text"
+          class="form-control"
+          id="input-locations-home"
+          placeholder="Enter Location"
+          autocomplete="off"
+        /><span
+          class="geo-location input-group-addon"
+          data-toggle="tooltip"
+          data-placement="top"
+          title=""
+          data-original-title="Find My Position"
+          ><i class="fa fa-map-marker"></i
+        ></span>
+      </div>
+
+      <input
+        name="latitude"
+        type="text"
+        class="form-control"
+        id="latitude"
+        hidden=""
+      />
+      <input
+        name="longitude"
+        type="text"
+        class="form-control"
+        id="longitude"
+        hidden=""
+      />
+    </div>
+    <div class="col-md-3 col-sm-3">
+      <button
+        type="submit"
+        map="refresh"
+        data-ajax-data-file="assets/php/data_2.php"
+        data-ajax-auto-zoom="1"
+        onclick="filterProducts(1)"
+        value="FILTER"
+        class="btn btn-primary width-100"
+      >
+        Search
+      </button>
+    </div>
+  </div>
+</div>

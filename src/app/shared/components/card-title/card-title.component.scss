@@ -1,0 +1,40 @@
+.sub-header {
+  padding: 15px;
+  position: relative;
+}
+.sub-header .ui-card-subtitle {
+  opacity: 1;
+  font-weight: bold;
+  position: absolute;
+  top: -38px;
+  background: white;
+  padding: 5px 15px;
+  left: 4px;
+  font-weight: 600;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
+.sub-header .ui-card-title {
+  color: rgb(19, 5, 5);
+  transition: none;
+  display: block;
+}
+.ui-car-div {
+  background-color: #f8f8f8;
+  padding: 1.8rem;
+  font-size: 1.2rem;
+  width: 100%;
+  white-space: nowrap;
+  margin-top: -0.2rem;
+  position: relative;
+}
+.ui-card-div div {
+  display: inline-block;
+}
+.sub-header .ui-card-time {
+  float: left;
+}
+
+.image:hover {
+  transform: scale(1.04);
+}

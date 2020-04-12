@@ -1,0 +1,25 @@
+<div class="car-details">
+  <div>
+    <img class="card-image" [src]="car.picture" />
+    <div class="ui-g">
+      <div class="ui-g-12">
+        Vin: <b>{{ car.vin }}</b>
+      </div>
+      <div class="ui-g-12">
+        Year: <b>{{ car.year }}</b>
+      </div>
+      <div class="ui-g-12">
+        Brand: <b>{{ car.brand }}</b>
+      </div>
+      <div class="ui-g-12">
+        Color: <b>{{ car.color }}</b>
+      </div>
+    </div>
+  </div>
+  <button
+    pButton
+    type="button"
+    icon="pi pi-search"
+    (click)="selectCar($event, car)"
+  ></button>
+</div>

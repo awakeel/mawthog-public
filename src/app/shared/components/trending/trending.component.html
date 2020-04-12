@@ -1,0 +1,16 @@
+<div class="card clearfix summary">
+  <h1>{{ title }}</h1>
+  <p-carousel
+    [value]="cars"
+    [numVisible]="4"
+    [numScroll]="3"
+    [circular]="false"
+    [responsiveOptions]="responsiveOptions"
+  >
+    <ng-template let-car pTemplate="item">
+      <div class="items grid">
+        <app-card [car]="car"></app-card>
+      </div>
+    </ng-template>
+  </p-carousel>
+</div>

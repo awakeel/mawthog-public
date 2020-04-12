@@ -1,0 +1,21 @@
+<!--<p-card [style]="{ width: '360px' }" styleClass="ui-card-shadow">
+  <p-header>
+    <img class="card-img" [src]="car.pictures" />
+  </p-header>
+  <div>
+    <app-card-title [car]="car"></app-card-title>
+    <app-card-sub-title [car]="car"></app-card-sub-title>
+  </div>
+  <p-footer> <app-card-tags [car]="car"></app-card-tags> </p-footer>
+</p-card>-->
+
+<p-card
+  (click)="selectCar($event, car)"
+  [style]="{ width: width }"
+  styleClass="ui-card-shadow"
+>
+  <p-header>
+    <app-card-title [car]="car"></app-card-title>
+  </p-header>
+  <div><app-card-tags [car]="car"></app-card-tags></div>
+</p-card>

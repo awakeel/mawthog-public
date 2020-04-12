@@ -1,6 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
-@import '@angular/material/prebuilt-themes/indigo-pink.css';
-
-body, html{
-  margin:0px;
+* {
+  font-family: "Baloo Paaji 2", cursive;
 }
+.label {
+  color: rgb(7, 6, 6);
+  padding: 3px 6px;
+  border-radius: 3px;
+  margin: 0px 5px;
+  opacity: 1;
+}
+
+.success {
+  background-color: #4caf50;
+} /* Green */
+.info {
+  background-color: #2196f3;
+} /* Blue */
+.warning {
+  background-color: #ff9800;
+} /* Orange */
+.danger {
+  background-color: #f44336;
+} /* Red */
+.default {
+  background-color: #e7e7e7;
+} /* Gray */
