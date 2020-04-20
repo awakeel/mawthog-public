@@ -1,0 +1,32 @@
+.grid-sub-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.grid-sub-heading .sort-dropdown {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 15px;
+}
+body .ui-button.ui-button-icon-only .ui-button-text,
+.ui-button-icon-only .ui-button-text {
+  padding: 0px !important;
+}
+:host .ui-dropdown-label {
+  font-size: 18px !important;
+}
+
+:host p-dropdown {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 25px;
+  list-style: none;
+  font-feature-settings: "tnum";
+  position: relative;
+  display: inline-block;
+  outline: 0;
+}

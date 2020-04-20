@@ -1,9 +1,11 @@
+import { Router } from "@angular/router";
 import { SubBrandService } from "./../../../services/subbrand.service";
 import { BrandService } from "./../../../services/brand.service";
 import { Brand, Sub } from "src/app/models/car";
 import { Component, OnInit } from "@angular/core";
 import { Observable } from "rxjs";
 import { SelectItem } from "primeng/api/selectitem";
+import { map } from "rxjs/operators";
 interface SelectBox {
   label: String;
   value: String;
@@ -17,18 +19,29 @@ interface SelectBox {
 })
 export class SearchBarComponent implements OnInit {
   brands: Observable<Brand[]>;
-  sub: Observable<Sub[]>;
+  subBrands: Observable<Sub[]>;
+  sub: SelectBox[];
   sortOptions: SelectItem[];
-  year: SelectBox[];
+  sortKey: string;
+  years: SelectBox[];
   colors;
   cities: SelectBox[];
-  sortKey: string;
+  selectedBrand;
+
   constructor(
     public brandService: BrandService,
-    private subService: SubBrandService
+    private subService: SubBrandService,
+    private router: Router
   ) {
     this.brands = this.brandService.entities$;
-    this.sub = this.subService.entities$;
+    this.subBrands = this.subService.entities$;
+    this.subBrands.subscribe((data: any) => {
+      console.log(data);
+      this.sub = data.map((item) => {
+        return { label: item.sub, id: item.id };
+      });
+    });
+    this.years = this.getYears();
   }
   onSortChange(ev) {}
   ngOnInit(): void {
@@ -37,12 +50,21 @@ export class SearchBarComponent implements OnInit {
       { label: "Oldest First", value: "year" },
       { label: "Brand", value: "brand" },
     ];
-    this.colors = ["Red", "Green"];
+    this.colors = [{ label: "Red" }, { label: "Green" }];
     this.cities = [
       { label: "Islamabad", value: "Islamabad" },
       { label: "Karachi", value: "Karachi" },
     ];
     this.brandService.getAll();
     this.subService.getAll();
+  }
+  getYears() {
+    const date = new Date();
+    const current = date.getFullYear() + 2;
+    const y = [];
+    for (let start = 1980; start < current; start++) {
+      y.push({ label: start, value: start });
+    }
+    return y;
   }
 }

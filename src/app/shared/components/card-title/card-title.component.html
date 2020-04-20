@@ -1,9 +1,14 @@
 <p-header>
-  <img class="image" src="Card" [src]="car.pictures" />
+  <img
+    class="image"
+    src="Card"
+    height="200px"
+    [src]="getCarPictures(car.pictures)"
+  />
 </p-header>
 <div class="sub-header">
   <div class="ui-card-title ng-star-inserted">
-    {{ car.brand.brand }} {{ car.model }} {{ car.sub }}
+    {{ car.brand.brand }} {{ car.model }} {{ car.sub.sub }}
   </div>
   <div class="ui-card-div">
     <div class="ui-card-time">

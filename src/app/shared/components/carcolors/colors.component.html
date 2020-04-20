@@ -1,0 +1,43 @@
+<div *ngFor="let item of colors" style="display: inline-block; padding: 10px;">
+  <span
+    *ngIf="item.image"
+    style="
+      height: 25px;
+      width: 25px;
+      border-radius: 55%;
+      background-size: 25px 25px;
+      display: block;
+    "
+    [attr.title]="item.color"
+    [ngStyle]="{
+      'background-image': 'url(../../../../assets/images/' + item.image + ')'
+    }"
+  >
+  </span>
+  <span
+    *ngIf="item.style"
+    style="
+      height: 25px;
+      width: 25px;
+      border: 1px solid #bbb;
+      border-radius: 55%;
+      display: block;
+    "
+    [attr.title]="item.color"
+    [ngStyle]="{ background: item.style }"
+  >
+  </span>
+
+  <span>
+    {{ item.color }}
+  </span>
+  <div>
+    <p-radioButton
+      (ngModelChange)="changeColor(item)"
+      [ngModel]="selectedValue"
+      name="groupname"
+      [value]="item.color"
+    >
+    </p-radioButton>
+  </div>
+</div>

@@ -3,6 +3,7 @@ import { Observable } from "rxjs";
 import { CarService } from "./../../services/car.service";
 import { Component, OnInit } from "@angular/core";
 import { Car } from "src/app/models/car";
+import { environment } from "src/environments/environment";
 
 @Component({
   selector: "app-summary",
@@ -23,10 +24,8 @@ export class SummaryComponent implements OnInit {
       } else {
         this.images.push(this.car.pictures);
       }
-      console.log(this.car);
-      console.log(this.images);
       this.images = this.images.map((image) => {
-        return { source: `/assets/uploads/cars/${id}/${image.trim()}` };
+        return { source: environment.HOST + environment.UPLOAD + image };
       });
       console.log(this.images);
     });

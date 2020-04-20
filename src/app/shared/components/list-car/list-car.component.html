@@ -1,25 +1,52 @@
-<div class="car-details">
-  <div>
-    <img class="card-image" [src]="car.picture" />
-    <div class="ui-g">
-      <div class="ui-g-12">
-        Vin: <b>{{ car.vin }}</b>
+<div class="item-container">
+  <div class="item-picture">
+    <img
+      class="image"
+      src="Card"
+      height="150px"
+      width="200px"
+      [src]="getCarPictures(car.pictures)"
+    />
+  </div>
+  <div class="item-details">
+    <h1 (click)="selectCar($event, car)">
+      {{ car.brand.brand }} {{ car.model }} {{ car.sub.sub }}
+    </h1>
+
+    <div>
+      <i class="fas fa-map-marker" style="color: rgb(228, 99, 13);"></i>
+      <span style="margin-left: 5px;"> {{ car.city }}</span>
+
+      <span
+        style="
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          vertical-align: top;
+          border-radius: 50%;
+        "
+        [style.backgroundColor]="getBackground(car.color).style"
+      >
+      </span>
+      <span>
+        {{ getBackground(car.color).color }}
+      </span>
+    </div>
+    <div>
+      <app-card-tags [car]="car"></app-card-tags>
+    </div>
+  </div>
+  <div class="item-action">
+    <div class="action">
+      <div>
+        <i class="fas fa-clock" style="color: rgb(185, 172, 56);"></i>
+        {{ car.createdAt | ago }}
       </div>
-      <div class="ui-g-12">
-        Year: <b>{{ car.year }}</b>
-      </div>
-      <div class="ui-g-12">
-        Brand: <b>{{ car.brand }}</b>
-      </div>
-      <div class="ui-g-12">
-        Color: <b>{{ car.color }}</b>
+      <div>
+        <h3 style="color: rgb(241, 92, 6);">
+          {{ car.price | currency: "sa" }}
+        </h3>
       </div>
     </div>
   </div>
-  <button
-    pButton
-    type="button"
-    icon="pi pi-search"
-    (click)="selectCar($event, car)"
-  ></button>
 </div>

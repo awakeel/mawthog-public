@@ -25,6 +25,17 @@ const routes: Routes = [
       },
     ],
   },
+  {
+    path: "add",
+    component: DefaultComponent,
+    children: [
+      {
+        path: "",
+        loadChildren: () =>
+          import("./addcar/addcar.module").then((m) => m.AddcarModule),
+      },
+    ],
+  },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

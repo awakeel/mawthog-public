@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
-  selector: 'app-bigscreen',
-  templateUrl: './bigscreen.component.html',
-  styleUrls: ['./bigscreen.component.scss']
+  selector: "app-bigscreen",
+  templateUrl: "./bigscreen.component.html",
+  styleUrls: ["./bigscreen.component.scss"],
 })
 export class BigscreenComponent implements OnInit {
+  constructor(private router: Router) {}
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit(): void {}
+  addNew() {
+    this.router.navigate(["add"]);
   }
-
 }

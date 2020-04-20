@@ -15,9 +15,19 @@ export class SubBrandService extends EntityCollectionServiceBase<Sub> {
     logger: Logger
   ) {
     super("SubBrand", serviceElementsFactory);
-    logger.log("Created custom Brand EntityDataService");
+    logger.log("Created custom sub EntityDataService");
   }
-  /*
+  /*getAll(brandId?): Observable<Sub[]> {
+    if (brandId)
+      return super.getAll().pipe(map((subs) => subs.map((sub) => sub.brandid == brandId)));
+    else return super.getAll().pipe(map((subs) => subs.map((sub) => sub)));
+  }
+
+
+  private mapHero(sub: Sub): Sub {
+    return { ...sub, dateLoaded: new Date() };
+  }
+
   getAll(): Observable<Sub[]> {;
 
     return super.getAll().pipe(;

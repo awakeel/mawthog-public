@@ -1,0 +1,44 @@
+:host .item-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  flex-direction: row;
+  background: #fff;
+  box-shadow: 0 5px 6px -6px #777;
+  border-radius: 5px;
+}
+.item-container div {
+  width: 200px;
+
+  align-self: center;
+}
+.item-container .item-picture {
+  padding: 2px;
+}
+.item-container .item-picture img {
+  border-radius: 5px;
+}
+.item-container .item-details {
+  flex-grow: 1;
+  padding: 10px;
+}
+.item-container .item-details h1 {
+  color: #3f7ab1;
+
+  cursor: pointer;
+}
+.item-container .item-details div {
+  padding: 5px;
+}
+.item-container .item-action {
+  padding: 10px;
+}
+.item-details h2 {
+  opacity: 0.8;
+}
+.action {
+}
+.action div:first {
+}
+.action div:last-child {
+}

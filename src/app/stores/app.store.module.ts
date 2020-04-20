@@ -14,14 +14,14 @@ const NGRX_STORE_CONFIGURATION = {};
 const REGISTERED_EFFECTS = [];
 
 const NGRX_DATA_SERVICE_CONFIGURATION = {
-  root: "http://localhost:3000/",
+  root: "http://localhost:3000/api/",
 };
 
 const Services = [CarService, SubBrandService];
 @NgModule({
   imports: [
     CommonModule,
-    ///StoreModule.forRoot(NGRX_STORE_CONFIGURATION),
+    StoreModule.forRoot(NGRX_STORE_CONFIGURATION),
     EffectsModule.forRoot(REGISTERED_EFFECTS),
     EntityDataModule.forRoot(entityConfig),
     StoreDevtoolsModule.instrument(),
@@ -31,6 +31,9 @@ const Services = [CarService, SubBrandService];
       provide: DefaultDataServiceConfig,
       useValue: NGRX_DATA_SERVICE_CONFIGURATION,
     },
+
+    SubBrandService,
+    CarService,
   ],
 })
 export class AppStoreModule {}

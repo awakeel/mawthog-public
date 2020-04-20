@@ -1,3 +1,4 @@
+import { environment } from "./../../../../environments/environment";
 import { Car, Brand, Sub } from "src/app/models/car";
 import { Component, OnInit, Input } from "@angular/core";
 
@@ -16,5 +17,10 @@ export class CardTitleComponent implements OnInit {
     console.log(this.car);
     this.brand = this.car.brand || {};
     this.sub = this.car.sub || {};
+  }
+  getCarPictures(pictures) {
+    if (pictures) {
+      return environment.HOST + environment.UPLOAD + pictures.split(",")[0];
+    }
   }
 }

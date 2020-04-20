@@ -39,12 +39,6 @@ export class HomeComponent implements OnInit {
     // this.subBrandService.getAll().subscribe((data) => {
     // console.log(data);
     //});
-
-    this.sortOptions = [
-      { label: "Newest First", value: "!year" },
-      { label: "Oldest First", value: "year" },
-      { label: "Brand", value: "brand" },
-    ];
   }
   onSortChange(ev) {}
 }

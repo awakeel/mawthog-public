@@ -26,7 +26,19 @@ import { CarouselModule } from "primeng/carousel";
 import { TabViewModule } from "primeng/tabview";
 import { MessagesModule } from "primeng/messages";
 import { MessageModule } from "primeng/message";
+import { ScrollPanelModule } from "primeng/scrollpanel";
+import { FieldsetModule } from "primeng/fieldset";
+import { RadioButtonModule } from "primeng/radiobutton";
+import { FileUploadModule } from "primeng/fileupload";
+import { CheckboxModule } from "primeng/checkbox";
+
 import { MainSearchComponent } from "./components/main-search/main-search.component";
+import { BrandsComponent } from "./components/brands/brands.component";
+import { SubComponent } from "./components/sub/sub.component";
+import { CitiesComponent } from "./components/cities/cities.component";
+import { YearsComponent } from "./components/years/years.component";
+import { ColorsComponent } from "./components/carcolors/colors.component";
+import { UploadComponent } from "./components/upload/upload.component";
 const MatModules = [
   ReactiveFormsModule,
   FormsModule,
@@ -44,6 +56,11 @@ const MatModules = [
   TabViewModule,
   MessageModule,
   MessagesModule,
+  ScrollPanelModule,
+  FieldsetModule,
+  RadioButtonModule,
+  FileUploadModule,
+  CheckboxModule,
 ];
 const components = [
   CardComponent,
@@ -55,6 +72,13 @@ const components = [
   TrendingComponent,
   MainSearchComponent,
   CardTagsComponent,
+  BrandsComponent,
+  SubComponent,
+  CitiesComponent,
+  YearsComponent,
+  ColorsComponent,
+  UploadComponent,
+  AgoPipe,
 ];
 @NgModule({
   declarations: [
@@ -62,7 +86,6 @@ const components = [
     CardSubTitleComponent,
     CardButtonsComponent,
     CardTagsComponent,
-    AgoPipe,
     BigscreenComponent,
   ],
   imports: [CommonModule, ...MatModules],

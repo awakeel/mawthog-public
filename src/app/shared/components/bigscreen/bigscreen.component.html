@@ -1,15 +1,23 @@
-<div id="introduction">
-  <div class="introduction-content">
-    <span class="title">Trusted Car Plateform</span>
-    <span class="subtitle">Clean, Elegant and Functional</span>
-    <img src="" />
-    <a
-      class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
-      type="button"
-      role="button"
-      aria-disabled="false"
-    >
-      <!-- <span class="ui-button-text ui-c">Sign Up</span>-->
-    </a>
+<section class="hero">
+  <div class="content__wrapper ng-scope">
+    <div class="hero__content">
+      <h1 class="hero__title">السيارات على الإنترنت</h1>
+      <p class="hero__subtitle">
+        نحن نغير طريقة شراء الناس للسيارات المستعملة من خلال توفير اختيار وقيمة
+        وجودة وراحة وراحة بال أفضل
+        <br />
+        <br />
+
+        <button
+          pButton
+          type="button"
+          label="إضافة سيارة جديدة"
+          (click)="addNew()"
+          class="ui-button-danger ui-button-text"
+          icon="pi pi-plus"
+          iconPos="left"
+        ></button>
+      </p>
+    </div>
   </div>
-</div>
+</section>

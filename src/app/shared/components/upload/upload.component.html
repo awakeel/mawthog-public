@@ -1,0 +1,12 @@
+<h3 class="first">Advanced</h3>
+<p-fileUpload
+  name="demo[]"
+  (onSelect)="onUpload($event)"
+  multiple="multiple"
+  accept="image/*"
+  maxFileSize="1000000"
+  customUpload="true"
+  [showUploadButton]="false"
+  [showCancelButton]="false"
+>
+</p-fileUpload>

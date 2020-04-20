@@ -1,0 +1,19 @@
+<p-scrollPanel [style]="{ width: '100%', height: '100vh' }" styleClass="custom">
+  <p-card *ngFor="let brand of brands | async" (click)="selectBrand(brand)">
+    <div class="ui-helper-clearfix">
+      <span class="maker_logo  {{ brand.cls }}"></span>
+      <div
+        style="
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 4px;
+          margin: 25px 5px 0 0;
+          vertical-align: top;
+          display: inline-block;
+        "
+      >
+        {{ brand.brand }}
+      </div>
+    </div>
+  </p-card>
+</p-scrollPanel>

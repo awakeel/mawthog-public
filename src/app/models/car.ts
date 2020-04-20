@@ -7,15 +7,16 @@ export class Brand {
 }
 export class Sub {
   id?: Number;
-  brand?: Brand;
+  brandid?: Brand;
   sub?: String;
 }
 export class Car {
-  id: Number;
+  id?: any;
   brand?: Brand;
   sub?: Sub;
-  subBrandId: Number;
-  time: Date;
+  subId: Number;
+  brandId: Number;
+  time?: Date;
   price: Number;
   specifications?: String;
   fueltype?: String;
@@ -25,5 +26,6 @@ export class Car {
   color: String;
   pictures: String;
   model: Number;
-  createdAt: Date;
+  quantity: Number;
+  createdAt?: Date;
 }

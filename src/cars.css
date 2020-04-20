@@ -1,0 +1,441 @@
+span.maker_logo {
+  width: 70px;
+  height: 38px;
+  overflow: hidden;
+  background-image: url("./assets/images/car_makers.png");
+  background-repeat: no-repeat;
+  float: right;
+}
+
+.maker_019 {
+  background-position: center 0;
+}
+
+/* Gmc */
+.maker_08 {
+  background-position: center -40px;
+}
+
+/* Audi */
+.maker_017 {
+  background-position: center -80px;
+}
+
+/* jaguar */
+.maker_047 {
+  background-position: center -120px;
+}
+
+/* land rover */
+.maker_060 {
+  background-position: center -160px;
+}
+
+/* hiundya */
+.maker_055 {
+  background-position: center -200px;
+}
+
+/* Mitsubishi */
+.maker_058 {
+  background-position: center -240px;
+}
+
+/* Nissan  */
+.maker_053 {
+  background-position: center -280px;
+}
+
+/* Mercedes */
+.maker_061 {
+  background-position: center -2958px;
+}
+
+/* Mybach */
+.maker_04 {
+  background-position: center -320px;
+}
+
+/* totyota */
+.maker_011 {
+  background-position: center -360px;
+}
+
+/* opel */
+.maker_05 {
+  background-position: center -400px;
+}
+
+/* honda */
+.maker_035 {
+  background-position: center -440px;
+}
+
+/* chevorlet */
+.maker_012 {
+  background-position: center -480px;
+}
+
+/* bently */
+.maker_06 {
+  background-position: center -520px;
+}
+
+/* Austin martin */
+.maker_043 {
+  background-position: center -560px;
+}
+
+/* cadalak */
+.maker_015 {
+  background-position: center -600px;
+}
+
+/* bmw */
+.maker_044 {
+  background-position: center -640px;
+}
+
+/* chrysler */
+.maker_030 {
+  background-position: center -680px;
+}
+
+/* citeroen */
+.maker_022 {
+  background-position: center -720px;
+}
+
+/* daweoo */
+.maker_021 {
+  background-position: center -760px;
+}
+
+/* daihatsu */
+.maker_023 {
+  background-position: center -800px;
+}
+
+/*  dodge */
+.maker_042 {
+  background-position: center -840px;
+}
+
+/*  ferrari */
+.maker_041 {
+  background-position: center -880px;
+}
+
+/* fiat */
+.maker_037 {
+  background-position: center -920px;
+}
+
+/* ford */
+.maker_051 {
+  background-position: center -960px;
+}
+
+/* mazda */
+.maker_052 {
+  background-position: center -1000px;
+}
+
+/* mazerati */
+.maker_09 {
+  background-position: center -1040px;
+}
+
+/* isusu */
+.maker_010 {
+  background-position: center -1080px;
+}
+
+/* infinity */
+.maker_07 {
+  background-position: center -1120px;
+}
+
+/* alfa romeo */
+.maker_020 {
+  background-position: center -1160px;
+}
+
+/* jeep */
+.maker_038 {
+  background-position: center -1200px;
+}
+
+/* kia */
+.maker_013 {
+  background-position: center -1240px;
+}
+
+/* porcche */
+.maker_016 {
+  background-position: center -1280px;
+}
+
+/* peugeot */
+.maker_040 {
+  background-position: center -1320px;
+}
+
+/* VoloksVagen */
+.maker_039 {
+  background-position: center -1360px;
+}
+
+/* volvo */
+.maker_033 {
+  background-position: center -1400px;
+}
+
+/* suzuki */
+.maker_032 {
+  background-position: center -1440px;
+}
+
+/* subaru */
+.maker_034 {
+  background-position: center -1480px;
+}
+
+/* seat */
+.maker_048 {
+  background-position: center -1520px;
+}
+
+/* lexus */
+.maker_031 {
+  background-position: center -1560px;
+}
+
+/* skoda */
+.maker_027 {
+  background-position: center -1600px;
+}
+
+/* saab */
+.maker_014 {
+  background-position: center -1640px;
+}
+
+/* buntiak */
+.maker_024 {
+  background-position: center -1680px;
+}
+
+/* Rover */
+.maker_025 {
+  background-position: center -1720px;
+}
+
+/* rols roys */
+.maker_029 {
+  background-position: center -1760px;
+}
+
+/* sang yong */
+.maker_057 {
+  background-position: center -1800px;
+}
+
+/* Mini coper */
+.maker_049 {
+  background-position: center -1840px;
+}
+
+/* lotus */
+.maker_018 {
+  background-position: center -1880px;
+}
+
+/* great walls */
+.maker_026 {
+  background-position: center -1920px;
+}
+
+/* renault */
+.maker_036 {
+  background-position: center -1960px;
+}
+
+/* cherry */
+.maker_028 {
+  background-position: center -2000px;
+}
+
+/* saturn */
+.maker_050 {
+  background-position: center -2040px;
+}
+
+/* lincolin */
+.maker_056 {
+  background-position: center -2080px;
+}
+
+/* mercury */
+.maker_054 {
+  background-position: center -2120px;
+}
+
+/* Morgan */
+.maker_059 {
+  background-position: center -2160px;
+}
+
+/* hummer */
+.maker_066 {
+  background-position: center -2200px;
+}
+
+/* faw */
+.maker_046 {
+  background-position: center -2240px;
+}
+
+/* lamborghini */
+.maker_045 {
+  background-position: center -2280px;
+}
+
+/* lada */
+.maker_065 {
+  background-position: center -2320px;
+}
+
+/* Fisker */
+.maker_063 {
+  background-position: center -2360px;
+}
+
+/* Smart */
+.maker_064 {
+  background-position: center -2400px;
+}
+
+/* Century */
+.maker_067 {
+  background-position: center -2440px;
+}
+
+/* Geely */
+.maker_068 {
+  background-position: center -2480px;
+}
+
+/* Classic */
+.maker_069 {
+  background-position: center -2518px;
+}
+
+/* changan */
+.maker_070 {
+  background-position: center -2558px;
+}
+
+/* Livan */
+.maker_071 {
+  background-position: center -2598px;
+}
+
+/* JMC */
+.maker_072 {
+  background-position: center -2638px;
+}
+
+/* Mclaren */
+.maker_073 {
+  background-position: center -2678px;
+}
+
+/* Victoria */
+.maker_074 {
+  background-position: center -2718px;
+}
+
+/* BYD */
+.maker_062 {
+  background-position: center -3157px;
+}
+
+/* اخرى */
+
+.maker_075 {
+  background-position: center -2758px;
+}
+
+/* BYD */
+.maker_076 {
+  background-position: center -2798px;
+}
+
+/* baic */
+.maker_077 {
+  background-position: center -2879px;
+}
+
+/* TATA */
+.maker_081 {
+  background-position: center -3037px;
+}
+
+/* Tiger */
+.maker_082 {
+  background-position: center -3118px;
+}
+
+/* JAC */
+.maker_083 {
+  background-position: center -2998px;
+}
+
+/* هايجر */
+
+.maker_078 {
+  background-position: center -2838px;
+}
+
+/* MJ */
+.maker_079 {
+  background-position: center -2919px;
+}
+
+/* photon */
+.maker_080 {
+  background-position: center -3196px;
+}
+
+/* BYD */
+.maker_084 {
+  background-position: center -3078px;
+}
+
+/* بيوك */
+.maker_085 {
+  background-position: center -3236px;
+}
+
+/* BYD */
+.maker_086 {
+  background-position: center -3276px;
+}
+
+/* BYD */
+.maker_090 {
+  background-position: center -3325px;
+}
+
+/*GAC*/
+.maker_091 {
+  background-position: center -3366px;
+}
+
+/* Heno */
+.maker_092 {
+  background-position: center -3399px;
+}
+
+/* maxxis */

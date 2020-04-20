@@ -1,0 +1,14 @@
+p-card {
+  cursor: pointer;
+  margin: 5px 0px;
+}
+p-card :hover {
+  background-color: rgb(68, 107, 167);
+  color: white;
+}
+.preset {
+  background: #f3f3f3;
+  margin: 5px 0px;
+  width: 100%;
+  font-size: 18px;
+}
